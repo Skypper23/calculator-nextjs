@@ -10,6 +10,9 @@ export default function Calculator() {
 
   const handleClick = (value: string) => {
     setDisplay((prev) => (prev === "0" ? value : prev + value));
+    if(value==="%"){
+      value="/100*"
+    }
   };
 
   const igual = ()=>{
