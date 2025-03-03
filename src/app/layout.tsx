@@ -1,3 +1,4 @@
+import "./globals.css";
 import Calculator from "./calculator";
 
 export default function RootLayout({
