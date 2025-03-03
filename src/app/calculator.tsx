@@ -42,9 +42,11 @@ export default function Calculator() {
     } else if (key === "Backspace") {
       // Exemplo para apagar o último caracter
       setDisplay(display.slice(0, -1));
-    } else if ("0123456789+-*/.%".includes(key)) {
+    } else if ("0123456789+-*/.".includes(key)) {
       // Para números ou operações, adicione ao display
       setDisplay((prev) => (prev === "0" ? key : prev + key));
+    } else if("%".includes(key)){
+      setDisplay((prev) => (prev === "0" ? "/100*" : prev + "/100*"))
     }
   };
 
