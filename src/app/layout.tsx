@@ -1,16 +1,14 @@
-import "./globals.css";
 import Calculator from "./calculator";
+import Document, { Html, Head } from "next/document";
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
+class myDocument extends Document{
+  return(){
     <html lang="pt-pt">
       <body>
         <Calculator/>
       </body>
     </html>
-  );
+  };
 }
+
+export default myDocument;
