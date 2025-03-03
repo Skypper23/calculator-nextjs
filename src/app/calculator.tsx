@@ -61,7 +61,7 @@ export default function Calculator() {
     <div className="flex justify-center bg-gray-100 h-dvh">
       <div className="grid grid-cols-4 gap-4 rounded-md text-center m-auto p-4 bg-amber-50 text-amber-200 h-8/12 w-3/12 justify-center shadow-xl">
         <Display value={display} />
-        <Button label="C" onClick={() => setDisplay("0")} span={2} />
+        <Button label="C" onClick={() => setDisplay("0")} />
         <Button label="%" onClick={handleClick} />
         <Button label="/" onClick={handleClick} />
         <Button label="7" onClick={handleClick} />

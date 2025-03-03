@@ -7,6 +7,10 @@ interface ButtonProps {
 }
 
 export default function Button({ label, onClick, span = 1 }: ButtonProps) {
+  if(label==='C'){
+    span = 2;
+  }
+  
   return (
     <button
       className={`bg-amber-950 h-16 col-span-${span} flex items-center justify-center rounded-md text-xl cursor-pointer hover:bg-amber-800`}
