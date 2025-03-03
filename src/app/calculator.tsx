@@ -51,7 +51,7 @@ export default function Calculator() {
     const handle = (event: KeyboardEvent) => handleKeyDown(event);
     document.addEventListener("keydown", handle);
 
-    // Cleanup do event listener
+    // Fehcar o event listener
     return () => {
       document.removeEventListener("keydown", handle);
     };
